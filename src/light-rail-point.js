@@ -2,7 +2,7 @@
 
 
 import React from 'react';
-import { geom } from 'ol-react';
+import { geom } from '@mitchelljbusby/ol-react';
 
 import { fromLatLon } from './map-utils';
 

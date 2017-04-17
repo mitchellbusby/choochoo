@@ -40,6 +40,14 @@ function foreverLoadingPoints() {
   });
 }
 
+const fetchRealTime = () => {
+  fetch('/realtime')
+  .then(response => response.json())
+  .then(responseBody => {
+    console.log(responseBody)
+  });
+}
+
 const fetchServiceData = serviceId => {
   return fetch('/service')
     .then(response => response.json());
@@ -81,7 +89,6 @@ class App extends React.Component {
       });
     });
   }
-
 }
 
 export default App;

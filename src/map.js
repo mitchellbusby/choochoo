@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, View, Feature, layer, source, geom} from 'ol-react';
+import { Map, View, Feature, layer, source, geom} from '@mitchelljbusby/ol-react';
 
 import LightRailPoint from './light-rail-point';
 import { fromLatLon } from './map-utils';

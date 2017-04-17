@@ -16,6 +16,9 @@ module.exports = {
       let api = new tfnsw.TfNswApi();
       api.fetch().then(response => {
         res.json(response);
+      })
+      .catch(err => {
+        res.sendStatus(500);
       });
     });
 
@@ -23,6 +26,19 @@ module.exports = {
       let api = new tfnsw.TfNswApi();
       api.service('').then(response => {
         res.json(response);
+      })
+      .catch(err => {
+        res.sendStatus(500);
+      });
+    });
+
+    app.get('/realtime', (_, res) => {
+      let api = new tfnsw.TfNswApi();
+      api.realtime().then(response => {
+        res.json(response);
+      })
+      .catch(err => {
+        res.send(err);
       });
     })
 
