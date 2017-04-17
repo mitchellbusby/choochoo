@@ -9,8 +9,7 @@
   "author": "mitchbusby@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@mitchelljbusby/ol-react": "^0.1.0",
-    "babel": "^6.23.0",
+    "@mitchelljbusby/ol-react": "^0.1.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.1",
